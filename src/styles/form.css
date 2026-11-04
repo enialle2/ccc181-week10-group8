@@ -246,3 +246,49 @@ TODO .alt-actions          display: flex; flex-direction: column; gap 0.5rem
    flex-direction: column;
    gap: 0.5rem;
 }
+
+/*
+2. 768px and up (tablets)
+TODO @media (min-width: 768px)
+     .login-card           max-width: 32rem; margin-inline: auto; padding 2rem
+     .form-options         flex-direction: row; justify-content: space-between;
+                           align-items: center (checkbox LEFT, link RIGHT)
+     .alt-actions          flex-direction: row (two buttons SIDE BY SIDE)
+*/
+
+@media (min-width: 768px) {
+   .login-card {
+      max-width: 32rem;
+      margin-inline: auto;
+      padding: 2rem;
+   }
+
+   .form-options {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+   }
+
+   .alt-actions {
+      flex-direction: row;
+   }
+}
+
+/*
+3. 1024px and up (laptops)
+TODO @media (min-width: 1024px)
+     .login-card           padding 2.5rem
+     .login-card__title    font-size 1.75rem
+*/
+
+@media (min-width: 1024px) {
+   .login-card {
+      padding: 2.5rem;
+   }
+
+   .login-card__title {
+      font-size: 1.75rem;
+   }
+}
+
+/* Form styles complete and tested across 360px, 768px, 1024px, and 1280px */
