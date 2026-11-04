@@ -23,9 +23,9 @@ npm run build        # must finish with no errors before you submit
 
 | Item | Your answer |
 | --- | --- |
-| Group number | |
-| Section | |
-| Repository URL | |
+| Group number | 8-CAPPIS |
+| Section | IT3A |
+| Repository URL | https://github.com/enialle2/ccc181-week-10-group8 |
 
 ## Members (each member fills in their own row in their own commit)
 
@@ -46,10 +46,10 @@ What changed **after** adding it?
 
 | Width | What must be true | Pass? |
 | --- | --- | --- |
-| 360 px | 1 column. Nav links stacked and 48px tall. Options and buttons stacked. Footer in 1 column. No sideways scrollbar. | |
-| 768 px | Nav in one row (brand left, links right). Checkbox and link in one row. Two buttons side by side. | |
-| 1024 px | Brand panel and login card side by side. Footer in 3 columns. Heading is larger. | |
-| 1280 px | Content centered and stops at 1200px. | |
+| 360 px | 1 column. Nav links stacked and 48px tall. Options and buttons stacked. Footer in 1 column. No sideways scrollbar. | Yes |
+| 768 px | Nav in one row (brand left, links right). Checkbox and link in one row. Two buttons side by side. | Yes |
+| 1024 px | Brand panel and login card side by side. Footer in 3 columns. Heading is larger. | Yes |
+| 1280 px | Content centered and stops at 1200px. | Yes |
 
 ### Breakpoints I observed
 
@@ -66,4 +66,4 @@ Screenshots are in `screenshots/` as `360.png`, `768.png`, `1024.png`, `1280.png
 
 ## What our group learned (leader writes this last)
 
-> (write your answer here)
+> Through this activity, our group learned how mobile-first design works in practice: we wrote the phone styles first with no media query, then used only min-width media queries to add changes as the screen got wider. By testing in DevTools from 360 px to 1280 px, we saw that the layout changed at specific breakpoints: the navbar moved from stacked links into one row at 768 px, and the brand panel and login card moved side by side with a 3-column footer at 1024 px, while at 1280 px the content only gained wider side margins and stopped growing at 1200 px. We also learned why the viewport meta tag matters, how Flexbox and CSS Grid divide the work of arranging rows and columns, and why using rem units and 48 px tap targets keeps the page readable and easy to use on a phone. Finally, working on separate branches with pull requests that a different teammate reviewed taught us to split one page across three CSS files, resolve README merge conflicts by keeping everyone's work, and check the combined page together so that no width looked broken and no sideways scrollbar appeared.
