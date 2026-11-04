@@ -31,7 +31,7 @@ npm run build        # must finish with no errors before you submit
 
 | Member | Name | GitHub username | CSS file | What I did |
 | --- | --- | --- | --- | --- |
-| 1 (leader) | | | `base.css` | |
+| 1 (leader) | Ellaine Dulalas | enialle2 | `base.css` | I wrote base.css (page layout and brand panel from phone to 1280px) and added the viewport meta tag. |
 | 2 | | | `nav.css` | |
 | 3 | | | `form.css` | |
 
@@ -40,7 +40,7 @@ npm run build        # must finish with no errors before you submit
 What did the page look like in DevTools phone mode **before** adding the viewport meta tag?
 What changed **after** adding it?
 
-> (write your answer here)
+> Before adding the viewport meta tag in DevTools phone mode, the entire page appears to be tiny and zoomed out. Because of this it tends to be difficult to read or interact without manually pinch-zooming. After adding the viewport meta tag, the page layout then correctly fits the true width of the device screen instead of pretending that the screen is a wide desktop canvas.
 
 ## DevTools test results
 
@@ -55,7 +55,12 @@ What changed **after** adding it?
 
 Using **Show media queries** and dragging slowly from 360 px to 1280 px, the layout changed at these exact widths:
 
-> (write the widths here, and say whether any width looked broken)
+> 360px: Single-column layout. The welcome hero card and the Sign-in form are stacked vertically.
+768px: Still follows a stacked, single-column layout (similar structure to 360px, but scaled to a wider container).
+1024px: The major structural breakpoint occurs here—the layout shifts from a single stacked column to a 2-column grid/flex row, placing the welcome hero card side-by-side with the Sign-in form.
+1280px: Maintains the same 2-column layout as seen at 1024px, but with wider outer side margins.
+
+No width looked broken, and there was no sideways scrollbar.
 
 Screenshots are in `screenshots/` as `360.png`, `768.png`, `1024.png`, `1280.png`.
 
