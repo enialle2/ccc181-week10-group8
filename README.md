@@ -80,3 +80,48 @@ Screenshots are in `screenshots/` as `360.png`, `768.png`, `1024.png`, `1280.png
 ## What our group learned (leader writes this last)
 
 > Through this activity, our group learned how mobile-first design works in practice: we wrote the phone styles first with no media query, then used only min-width media queries to add changes as the screen got wider. By testing in DevTools from 360 px to 1280 px, we saw that the layout changed at specific breakpoints: the navbar moved from stacked links into one row at 768 px, and the brand panel and login card moved side by side with a 3-column footer at 1024 px, while at 1280 px the content only gained wider side margins and stopped growing at 1200 px. We also learned why the viewport meta tag matters, how Flexbox and CSS Grid divide the work of arranging rows and columns, and why using rem units and 48 px tap targets keeps the page readable and easy to use on a phone. Finally, working on separate branches with pull requests that a different teammate reviewed taught us to split one page across three CSS files, resolve README merge conflicts by keeping everyone's work, and check the combined page together so that no width looked broken and no sideways scrollbar appeared.
+
+## Part 2: Who did what
+
+| Member | Name | GitHub username | What I did in Part 2 |
+|---|---|---|---|
+| 1 | Ellaine Dulalas | enialle2 | Set up the Express server (.env, CORS, JSON), built GET /health and POST /api/v1/sessions with validation, bcryptjs password check and a 1-hour token, added the demo user, and tested my endpoints in Postman. |
+| 2 | (Member 2 fills this) | | |
+| 3 | (Member 3 fills this) | | |
+
+## Part 2: Backend Login
+
+### How to run
+
+**Demo account:** `student@campusconnect.test` / `Campus26` (name: Demo Student)
+
+**Terminal 1: the backend**
+```
+
+cd server
+
+npm install
+
+copy .env.example .env      (Mac/Linux: cp .env.example .env)
+
+npm start
+
+```
+You should see: `API running on http://localhost:3000`
+
+**Terminal 2: the front end (in the project root)**
+```
+
+npm install
+
+copy .env.example .env      (Mac/Linux: cp .env.example .env)
+
+npm run dev
+
+```
+Open http://localhost:5173 and log in with the demo account. In the browser's Network tab you can see the request to `/api/v1/sessions` and its status code.
+
+**Environment files** (both contain fake example values; the real `.env` files are not committed):
+- `server/.env.example`: `PORT`, `JWT\_SECRET`, `CLIENT\_ORIGIN`
+- `.env.example` (project root): `VITE\_API\_URL`
+
