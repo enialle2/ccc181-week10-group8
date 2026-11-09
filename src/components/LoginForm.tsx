@@ -66,7 +66,10 @@ export default function LoginForm() {
     const nextErrors = validate(values);
     setErrors(nextErrors);
     // Part 1 checks first: an invalid form never sends a request.
-    if (Object.keys(nextErrors).length > 0) return;
+    if (Object.keys(nextErrors).length > 0) {
+      console.log('[VALIDATION] Form is invalid, no API request sent');
+      return;
+    }
 
     setLoading(true);
     try {
