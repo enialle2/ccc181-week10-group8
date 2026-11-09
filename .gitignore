@@ -1,0 +1,14 @@
+# Dependencies
+node_modules/
+server/node_modules/
+
+# Environment variables
+.env
+server/.env
+
+# Allow example environment file
+!.env.example
+!server/.env.example
+
+# Build output
+dist/
