@@ -86,7 +86,7 @@ Screenshots are in `screenshots/` as `360.png`, `768.png`, `1024.png`, `1280.png
 | Member | Name | GitHub username | What I did in Part 2 |
 |---|---|---|---|
 | 1 | Ellaine Dulalas | enialle2 | Set up the Express server (.env, CORS, JSON), built GET /health and POST /api/v1/sessions with validation, bcryptjs password check and a 1-hour token, added the demo user, and tested my endpoints in Postman. |
-| 2 | (Member 2 fills this) | | |
+| 2 | Anrica Tinoy |anricatinoy | Part 2: Wrote docs/API-SPEC.md (3 required endpoints and the events design). Built the token middleware (requireAuth), GET /api/v1/users/me, and the 404 and 500 handlers. Made the Postman collection (7 requests), exported it, and took the Postman screenshots.|
 | 3 | (Member 3 fills this) | | |
 
 ## Part 2: Backend Login
